@@ -10,7 +10,7 @@ var app=express();
 app.use(express.static(path.join(__dirname,"public")));
 
 app.get('/', function(req,res){
-    res.send("آستغفر الله و اتوب اليه");
+    res.sendFile("index.html");
 });
 
 //Run the server
